@@ -1,0 +1,19 @@
+calendar_urls:
+  - "https://example.com/calendar1.ics"
+  - "https://example.com/calendar2.ics"
+  - "/path/to/local/calendar.ics"
+
+merge_overlapping_events: true
+
+# event_splitting_strategy: Determines how to handle events longer than 24 hours
+# Possible values:
+#   split: Split events into 24 hours chunks
+#   split_and_adjust: Split events into 24 hours chunks, but shorten the chunks by 1 minute (23 hours and 59 minutes), to overcome visualization issues with some web calendars
+#   no_split: Do not split events
+event_splitting_strategy: split_and_adjust
+
+days_limit: 90
+cache_expiration_minutes: 5
+local_timezone: Europe/Rome
+calendar_name: Busy Times
+busy_events_summary: Busy
